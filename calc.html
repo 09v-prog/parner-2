@@ -10,46 +10,36 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
   :root {
-    /* Poster POS color system */
     --poster-green: #00b956;
     --poster-green-hover: #00a34c;
     --poster-green-dark: #009244;
     --poster-green-light: #e6f7ed;
     --poster-green-bg: #f3fbf6;
-
-    /* Brand blue (Partner CTA — joinposter.com partner page) */
     --poster-blue: #2c8aef;
     --poster-blue-hover: #1e7fdf;
     --poster-blue-dark: #1872cc;
     --poster-blue-light: #e7f1fe;
-
     --text-primary: #1a1a1a;
     --text-body: #404040;
     --text-secondary: #6b6b6b;
     --text-muted: #9a9a9a;
-
     --border: #e6e6e6;
     --border-light: #f0f0f0;
     --bg-page: #ffffff;
     --bg-section: #f7f8fa;
     --bg-card: #ffffff;
-
     --shadow-xs: 0 1px 2px rgba(20,20,20,0.04);
     --shadow-sm: 0 2px 8px rgba(20,20,20,0.05);
     --shadow-md: 0 4px 16px rgba(20,20,20,0.06);
     --shadow-lg: 0 12px 32px rgba(20,20,20,0.08);
-
     --radius-sm: 8px;
     --radius-md: 12px;
     --radius-lg: 16px;
     --radius-xl: 24px;
     --radius-pill: 100px;
   }
-
   html { scroll-behavior: smooth; }
-
   body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     color: var(--text-primary);
@@ -59,11 +49,8 @@
     -moz-osx-font-smoothing: grayscale;
     font-size: 15px;
   }
-
   a { color: inherit; text-decoration: none; }
   button { font-family: inherit; }
-
-  /* ===== TOP BAR ===== */
   .topbar {
     background: var(--text-primary);
     color: rgba(255,255,255,0.85);
@@ -86,8 +73,6 @@
   .topbar-right { display: flex; gap: 14px; align-items: center; font-weight: 500; }
   .topbar-right a { color: white; }
   .topbar-right .topbar-phone { color: var(--poster-green); font-weight: 600; }
-
-  /* ===== NAVBAR ===== */
   .navbar {
     position: sticky;
     top: 0;
@@ -113,7 +98,6 @@
     flex-shrink: 0;
   }
   .navbar-logo img { display: block; height: 36px; width: auto; }
-
   .nav-menu {
     display: flex;
     gap: 4px;
@@ -134,7 +118,6 @@
   }
   .nav-link:hover { color: var(--poster-green); background: var(--poster-green-bg); }
   .nav-link svg { width: 12px; height: 12px; opacity: 0.5; }
-
   .nav-actions {
     display: flex;
     align-items: center;
@@ -164,7 +147,6 @@
     color: var(--text-primary);
     box-shadow: var(--shadow-xs);
   }
-
   .btn {
     display: inline-flex;
     align-items: center;
@@ -195,10 +177,8 @@
     transform: translateY(-1px);
   }
   .btn-lg { padding: 14px 28px; font-size: 15px; }
-
   .mobile-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
   .mobile-toggle svg { width: 22px; height: 22px; }
-
   @media (max-width: 1023px) {
     .nav-menu { display: none; }
   }
@@ -208,8 +188,6 @@
     .navbar-logo img { height: 30px; }
     .nav-actions .btn-ghost { display: none; }
   }
-
-  /* ===== HERO (light) ===== */
   .hero {
     position: relative;
     padding: 72px 24px 48px;
@@ -270,7 +248,7 @@
   .hero p {
     font-size: 17px;
     color: var(--text-secondary);
-    max-width: 580px;
+    max-width: 620px;
     margin: 0 auto 28px;
     line-height: 1.6;
   }
@@ -298,15 +276,11 @@
     color: var(--text-muted);
     margin-top: 2px;
   }
-
-  /* ===== CONTAINER ===== */
   .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
   }
-
-  /* ===== CALCULATOR ===== */
   .calc-section { padding: 32px 0 80px; }
   .calc-card {
     background: var(--bg-card);
@@ -346,7 +320,6 @@
   .calc-header-text { position: relative; }
   .calc-header-title { font-size: 18px; font-weight: 700; line-height: 1.2; margin-bottom: 2px; }
   .calc-header-sub { font-size: 13px; color: rgba(255,255,255,0.6); }
-
   .calc-body {
     padding: 40px 36px;
     display: grid;
@@ -356,8 +329,6 @@
   @media (max-width: 860px) {
     .calc-body { grid-template-columns: 1fr; gap: 32px; padding: 28px 22px; }
   }
-
-  /* Form Controls */
   .form-group { margin-bottom: 24px; }
   .form-group:last-child { margin-bottom: 0; }
   .form-label {
@@ -369,7 +340,6 @@
     letter-spacing: 0.6px;
     margin-bottom: 12px;
   }
-
   .plan-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -413,8 +383,6 @@
     letter-spacing: 0.4px;
     z-index: 1;
   }
-
-  /* Toggle buttons */
   .toggle-group {
     display: flex;
     background: var(--bg-section);
@@ -455,8 +423,6 @@
     text-transform: uppercase;
     letter-spacing: 0.3px;
   }
-
-  /* Slider */
   .slider-container { position: relative; }
   .slider-value {
     display: flex;
@@ -499,8 +465,6 @@
     border: 3px solid white;
     box-shadow: 0 2px 8px rgba(0,185,86,0.4);
   }
-
-  /* Results Panel */
   .results-panel { display: flex; flex-direction: column; justify-content: center; gap: 14px; }
   .result-main {
     background: linear-gradient(135deg, var(--text-primary) 0%, #2a2a2a 100%);
@@ -552,7 +516,6 @@
     margin-bottom: 4px;
   }
   .result-sub-value { font-size: 20px; font-weight: 800; color: white; }
-
   .breakdown-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
   .breakdown-card {
     background: var(--bg-section);
@@ -569,8 +532,6 @@
     margin-bottom: 4px;
   }
   .breakdown-card-value { font-size: 16px; font-weight: 800; color: var(--text-primary); }
-
-  /* ===== SECTIONS ===== */
   .section { padding: 80px 24px; }
   .section-gray { background: var(--bg-section); }
   .section-title { text-align: center; margin-bottom: 48px; }
@@ -583,8 +544,6 @@
     line-height: 1.15;
   }
   .section-title p { font-size: 16px; color: var(--text-secondary); max-width: 580px; margin: 0 auto; }
-
-  /* Advantages */
   .advantages-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
   @media (max-width: 860px) { .advantages-grid { grid-template-columns: 1fr; } }
   .advantage-card {
@@ -609,8 +568,6 @@
   .advantage-icon svg { width: 24px; height: 24px; color: var(--poster-green); }
   .advantage-card h3 { font-size: 17px; font-weight: 700; margin-bottom: 8px; }
   .advantage-card p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
-
-  /* Pricing Table */
   .pricing-table-wrap {
     background: var(--bg-card);
     border-radius: var(--radius-lg);
@@ -650,8 +607,6 @@
     .pricing-table { font-size: 11px; }
     .pricing-table thead th, .pricing-table tbody td { padding: 10px 8px; }
   }
-
-  /* Chart */
   .projection-card {
     background: var(--bg-card);
     border-radius: var(--radius-lg);
@@ -661,11 +616,8 @@
   }
   .projection-chart { width: 100%; height: 280px; position: relative; margin-top: 24px; }
   .chart-canvas { width: 100%; height: 100%; }
-
-  /* How It Works */
-  .steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-  @media (max-width: 860px) { .steps-grid { grid-template-columns: 1fr 1fr; } }
-  @media (max-width: 480px) { .steps-grid { grid-template-columns: 1fr; } }
+  .steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  @media (max-width: 860px) { .steps-grid { grid-template-columns: 1fr; } }
   .step-card {
     text-align: center;
     padding: 32px 22px;
@@ -690,8 +642,6 @@
   }
   .step-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
   .step-card p { font-size: 13px; color: var(--text-secondary); line-height: 1.55; }
-
-  /* FAQ */
   .faq-list { max-width: 760px; margin: 0 auto; }
   .faq-item {
     background: var(--bg-card);
@@ -733,8 +683,6 @@
     color: var(--text-secondary);
     line-height: 1.7;
   }
-
-  /* Manager Card */
   .manager-section { padding: 0 24px 80px; }
   .manager-card {
     max-width: 880px;
@@ -845,15 +793,6 @@
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   }
-  .manager-contact-wa {
-    background: #25d366;
-    color: white;
-  }
-  .manager-contact-wa:hover {
-    background: #1ebe5d;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(37,211,102,0.32);
-  }
   .manager-contact-tg {
     background: #0088cc;
     color: white;
@@ -863,8 +802,15 @@
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(0,136,204,0.32);
   }
-
-  /* CTA */
+  .manager-contact-mail {
+    background: var(--poster-green);
+    color: white;
+  }
+  .manager-contact-mail:hover {
+    background: var(--poster-green-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,185,86,0.32);
+  }
   .cta-section { padding: 0 24px 80px; }
   .cta-card {
     background: linear-gradient(135deg, var(--text-primary) 0%, #1f1f1f 50%, var(--poster-green-dark) 200%);
@@ -906,8 +852,6 @@
     margin-left: auto;
     margin-right: auto;
   }
-
-  /* Minimal Footer */
   .footer-min {
     background: var(--bg-section);
     padding: 28px 24px;
@@ -925,11 +869,9 @@
     color: var(--text-muted);
   }
   .footer-min-inner img { height: 24px; width: auto; opacity: 0.85; }
-
 </style>
 </head>
 <body>
-
 <!-- Top Bar -->
 <div class="topbar">
   <div class="topbar-inner">
@@ -939,19 +881,17 @@
       <a href="https://joinposter.com/blog" target="_blank" data-i18n="topbarBlog"></a>
     </div>
     <div class="topbar-right">
-      <a href="tel:+380979085775" class="topbar-phone">+38 097 908-57-75</a>
+      <a href="tel:+380735420384" class="topbar-phone">+38 073 542-03-84</a>
       <span data-i18n="topbarHours" style="color:rgba(255,255,255,0.5);"></span>
     </div>
   </div>
 </div>
-
 <!-- Navbar -->
 <nav class="navbar">
   <div class="navbar-inner">
     <a href="https://joinposter.com/ua" class="navbar-logo" target="_blank">
       <img src="https://joinposter.com/i/site/img/logo.png" alt="Poster" />
     </a>
-
     <div class="nav-actions">
       <div class="lang-switch">
         <button class="lang-btn active" onclick="setLang('ua')">Укр</button>
@@ -962,21 +902,19 @@
     </div>
   </div>
 </nav>
-
 <!-- Hero -->
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-badge" data-i18n="heroBadge"></div>
     <h1 data-i18n-html="heroTitle"></h1>
     <p data-i18n="heroSubtitle"></p>
-
     <div class="hero-stats">
       <div>
         <div class="hero-stat-num"><span>30%</span></div>
         <div class="hero-stat-label" data-i18n="stat1"></div>
       </div>
       <div>
-        <div class="hero-stat-num">50 000<span>+</span></div>
+        <div class="hero-stat-num">27 000<span>+</span></div>
         <div class="hero-stat-label" data-i18n="stat2"></div>
       </div>
       <div>
@@ -990,7 +928,6 @@
     </div>
   </div>
 </section>
-
 <!-- Calculator -->
 <section class="calc-section">
   <div class="container">
@@ -1004,7 +941,6 @@
           <div class="calc-header-sub" data-i18n="calcSub"></div>
         </div>
       </div>
-
       <div class="calc-body">
         <div>
           <div class="form-group">
@@ -1041,7 +977,6 @@
               </div>
             </div>
           </div>
-
           <div class="form-group">
             <div class="form-label" data-i18n="labelBilling"></div>
             <div class="toggle-group">
@@ -1053,7 +988,6 @@
               </button>
             </div>
           </div>
-
           <div class="form-group">
             <div class="form-label" data-i18n="labelClients"></div>
             <div class="slider-container">
@@ -1064,7 +998,6 @@
               <input type="range" id="clientSlider" min="1" max="50" value="5" oninput="updateCalc()">
             </div>
           </div>
-
           <div class="form-group">
             <div class="form-label" data-i18n="labelPeriod"></div>
             <div class="toggle-group">
@@ -1073,7 +1006,6 @@
             </div>
           </div>
         </div>
-
         <div class="results-panel">
           <div class="result-main">
             <div class="result-label" data-i18n="resultLabel"></div>
@@ -1113,7 +1045,6 @@
     </div>
   </div>
 </section>
-
 <!-- Advantages -->
 <section class="section section-gray">
   <div class="container">
@@ -1146,7 +1077,6 @@
     </div>
   </div>
 </section>
-
 <!-- Pricing Table -->
 <section class="section">
   <div class="container">
@@ -1199,7 +1129,6 @@
     </div>
   </div>
 </section>
-
 <!-- Growth Projection -->
 <section class="section section-gray">
   <div class="container">
@@ -1214,7 +1143,6 @@
     </div>
   </div>
 </section>
-
 <!-- How It Works -->
 <section class="section">
   <div class="container">
@@ -1238,15 +1166,9 @@
         <h3 data-i18n="step3Title"></h3>
         <p data-i18n="step3Text"></p>
       </div>
-      <div class="step-card">
-        <div class="step-number">4</div>
-        <h3 data-i18n="step4Title"></h3>
-        <p data-i18n="step4Text"></p>
-      </div>
     </div>
   </div>
 </section>
-
 <!-- FAQ -->
 <section class="section section-gray">
   <div class="container">
@@ -1257,39 +1179,34 @@
     <div class="faq-list" id="faqList"></div>
   </div>
 </section>
-
 <!-- Personal Manager -->
 <section class="manager-section">
   <div class="manager-card">
- 
-<div class="manager-photo">
-  <img src="f5.png" alt="Олександра Каблан" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-
-  <div class="manager-photo-fallback" style="display:none; width:100%; height:100%; align-items:center; justify-content:center;">UA</div>
-</div>
-   
+    <div class="manager-photo">
+      <img src="f5.png" alt="Олександра Каблан" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+      <div class="manager-photo-fallback" style="display:none; width:100%; height:100%; align-items:center; justify-content:center;">ОК</div>
+    </div>
     <div class="manager-info">
       <div class="manager-label" data-i18n="mgrLabel"></div>
       <div class="manager-name" data-i18n="mgrName"></div>
       <div class="manager-role" data-i18n="mgrRole"></div>
       <div class="manager-contacts">
-        <a href="tel:+380979085775" class="manager-contact manager-contact-phone">
+        <a href="tel:+380735420384" class="manager-contact manager-contact-phone">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          +38 097 908-57-75
+          +38 073 542-03-84
         </a>
-        <a href="https://wa.me/380979085775" target="_blank" class="manager-contact manager-contact-wa">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A7.85 7.85 0 0 0 12.05 4a7.94 7.94 0 0 0-6.88 11.9L4 20l4.2-1.1a7.93 7.93 0 0 0 3.79.97h.01a7.94 7.94 0 0 0 7.94-7.93 7.88 7.88 0 0 0-2.34-5.62zM12.05 18.5h-.01a6.6 6.6 0 0 1-3.36-.92l-.24-.14-2.5.65.67-2.43-.16-.25a6.6 6.6 0 0 1-1.01-3.5 6.6 6.6 0 0 1 6.6-6.6 6.55 6.55 0 0 1 4.66 1.94 6.55 6.55 0 0 1 1.93 4.67 6.6 6.6 0 0 1-6.58 6.58zm3.62-4.93c-.2-.1-1.18-.58-1.36-.65-.18-.07-.31-.1-.45.1s-.51.65-.63.78c-.12.14-.23.15-.43.05-.2-.1-.84-.31-1.6-.99-.59-.53-.99-1.18-1.11-1.38-.12-.2-.01-.31.09-.41.09-.09.2-.23.3-.35.1-.12.13-.2.2-.33.07-.14.03-.26-.02-.35-.05-.1-.45-1.08-.61-1.48-.16-.39-.33-.34-.45-.34l-.39-.01a.75.75 0 0 0-.54.25c-.18.2-.71.7-.71 1.7s.73 1.97.83 2.11c.1.14 1.43 2.18 3.46 3.06.48.21.86.33 1.16.43.49.16.93.13 1.28.08.39-.06 1.18-.48 1.35-.95.16-.47.16-.86.12-.95-.05-.09-.18-.14-.38-.24z"/></svg>
-          WhatsApp
-        </a>
-        <a href="https://t.me/joinposter_ukraine" target="_blank" class="manager-contact manager-contact-tg">
+        <a href="https://t.me/oleksandra_kablan_poster" target="_blank" class="manager-contact manager-contact-tg">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.94 4.36 18.7 19.65c-.24 1.08-.88 1.35-1.78.84l-4.92-3.63-2.37 2.29c-.27.27-.5.5-1 .5l.36-5.05L18.18 6.4c.4-.36-.09-.56-.62-.2L7.16 12.84l-4.85-1.52c-1.06-.34-1.08-1.06.22-1.57L20.6 2.94c.88-.32 1.65.21 1.34 1.42z"/></svg>
-          @joinposter_ukraine
+          @oleksandra_kablan_poster
+        </a>
+        <a href="mailto:o.kablan@joinposter.com" class="manager-contact manager-contact-mail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          o.kablan@joinposter.com
         </a>
       </div>
     </div>
   </div>
 </section>
-
 <!-- CTA -->
 <section class="cta-section">
   <div class="cta-card">
@@ -1301,7 +1218,6 @@
     </a>
   </div>
 </section>
-
 <!-- Minimal Footer -->
 <footer class="footer-min">
   <div class="footer-min-inner">
@@ -1309,7 +1225,6 @@
     <span data-i18n="ftrCopy"></span>
   </div>
 </footer>
-
 <script>
 // ===== I18N DATA =====
 const i18n = {
@@ -1317,22 +1232,15 @@ const i18n = {
     topbarKB: 'База знань',
     topbarBlog: 'Блог',
     topbarHours: '· Цілодобово',
-    navFeatures: 'Можливості',
-    navSolutions: 'Рішення',
-    navHardware: 'Обладнання',
-    navPricing: 'Ціни',
-    navPartner: 'Партнерам',
     navLogin: 'Увійти',
     navTry: 'Спробувати',
-
     heroBadge: 'Партнерська програма · Україна',
-    heroTitle: 'Заробляйте <span>30%</span> з кожного клієнта Poster',
-    heroSubtitle: 'Рекомендуйте Poster POS — POS-систему, якою користуються 50 000+ закладів у 100 країнах — і отримуйте винагороду за кожного залученого клієнта в Україні.',
+    heroTitle: 'Заробляйте <span>до 8 000 грн</span> з кожного клієнта Poster',
+    heroSubtitle: 'Рекомендуйте Poster закладам і магазинам, допомагайте підключати додаткові функції та отримуйте винагороду за кожного нового клієнта.',
     stat1: 'комісія від підписки',
     stat2: 'закладів у 100 країнах',
     stat3: 'безкоштовних днів',
     stat4: 'підтримка партнерів',
-
     calcTitle: 'Калькулятор партнерської винагороди',
     calcSub: 'Дізнайтесь, скільки ви заробите на залученні клієнтів',
     labelPlan: 'Тарифний план клієнта',
@@ -1355,16 +1263,14 @@ const i18n = {
     bkPeriod: 'Період комісії',
     bkPayout: 'Виплата',
     bkPayoutVal: 'щоквартально',
-
     advTitle: 'Переваги партнерства',
     advSubtitle: 'Чому варто стати партнером Poster POS в Україні',
     adv1Title: 'Висока комісія',
     adv1Text: 'Отримуйте 30% від суми підписки кожного залученого клієнта протягом перших 3 або 12 місяців. Без стелі по доходу.',
-    adv2Title: '50 000+ закладів у 100 країнах',
-    adv2Text: 'Poster POS — перевірена система, якою користуються 50 000+ закладів по всьому світу. Легкий і зрозумілий продукт для рекомендації.',
+    adv2Title: '27 000 закладів у 100 країнах',
+    adv2Text: 'Poster POS — перевірена система, якою користуються 27 000 закладів по всьому світу. Легкий і зрозумілий продукт для рекомендації.',
     adv3Title: 'Персональний менеджер',
     adv3Text: 'Отримайте особистого менеджера, навчальні матеріали, маркетингову підтримку та доступ до закритих вебінарів команди Poster.',
-
     tableTitle: 'Тарифи та винагорода',
     tableSubtitle: 'Скільки ви заробите за кожного клієнта на кожному тарифі',
     thPlan: 'Тариф',
@@ -1372,88 +1278,49 @@ const i18n = {
     thMonthly: 'Ціна/міс',
     thComm3: 'Комісія 3 міс',
     thComm12: 'Комісія 12 міс',
-
     chartTitle: 'Прогноз заробітку',
     chartSubtitle: 'Якщо залучати по 3 клієнти щомісяця на тариф Business (за рік)',
-
     howTitle: 'Як це працює',
-    howSubtitle: 'Чотири прості кроки до стабільного пасивного доходу',
+    howSubtitle: '3 кроки до заробітку з Poster',
     step1Title: 'Зареєструйтесь',
-    step1Text: 'Заповніть форму на сайті й отримайте доступ до партнерського кабінету',
-    step2Title: 'Пройдіть навчання',
-    step2Text: 'Вивчіть продукт і отримайте сертифікат партнера Poster',
-    step3Title: 'Рекомендуйте',
-    step3Text: 'Залучайте нових клієнтів — кафе, ресторани, магазини',
-    step4Title: 'Отримуйте гроші',
-    step4Text: '30% комісії нараховується автоматично і виплачується щоквартально',
-
+    step1Text: 'Заповніть форму на сайті, отримайте доступ до партнерського кабінету та пройдіть коротке навчання по продукту.',
+    step2Title: 'Рекомендуйте',
+    step2Text: 'Залучайте нових клієнтів — кафе, ресторани, магазини. Допомагайте підключати додаткові функції Poster.',
+    step3Title: 'Отримуйте гроші',
+    step3Text: '30% комісії нараховується автоматично і виплачується щоквартально на ваш рахунок.',
     faqTitle: 'Часті запитання',
     faqSubtitle: 'Все, що потрібно знати про партнерську програму Poster',
-
     mgrLabel: 'Ваш персональний менеджер',
-    mgrName: 'Менеджер по Україні',
-    mgrRole: 'Партнерська програма Poster POS · Україна. Зв\'яжіться зі мною зручним способом — відповім на всі ваші запитання.',
-
-    ctaTitle: 'Готові заробляти з Poster?',
-    ctaText: 'Приєднуйтесь до партнерської програми і починайте отримувати пасивний дохід вже сьогодні',
+    mgrName: 'Олександра Каблан',
+    mgrRole: 'Консультації та підтримка в партнерській програмі Poster. Напишіть або зателефонуйте зручним для вас способом.',
+    ctaTitle: 'Готові стати партнером Poster?',
+    ctaText: 'Почніть заробляти разом із Poster вже сьогодні.',
     ctaBtn: 'Стати партнером',
-
-    footerAbout: 'Хмарна POS-система для автоматизації кафе, ресторанів і магазинів. Вже 50 000+ закладів у 100 країнах.',
-    footerHours: 'Цілодобово · Підтримка 24/7',
-    ftrPosterPos: 'Poster POS',
-    ftrTour: 'Тур продуктом',
-    ftrPricing: 'Ціни',
-    ftrHardware: 'Обладнання',
-    ftrDownload: 'Завантажити касу',
-    ftrAddons: 'Доповнення',
-    ftrLearn: 'Навчання',
-    ftrKB: 'База знань',
-    ftrWebinars: 'Вебінари',
-    ftrAcademy: 'Академія Poster',
-    ftrBlog: 'Блог про бізнес',
-    ftrCompany: 'Компанія',
-    ftrAbout: 'Про нас',
-    ftrPartners: 'Партнерам',
-    ftrCases: 'Кейси клієнтів',
-    ftrContacts: 'Контакти',
     ftrCopy: '© 2026 Poster POS Inc. Партнерський калькулятор',
-    ftrTerms: 'Оферта',
-    ftrPrivacy: 'Конфіденційність',
-    ftrCookies: 'Cookies',
-
     pricePrefix: 'від ',
     priceSuffix: ' ₴/міс',
     periodSuffix: ' міс',
     chartMonth: 'міс ',
     faq: [
-      { q: 'Скільки я можу заробити як партнер?', a: 'Ви отримуєте 30% від суми підписки кожного залученого клієнта. Наприклад, якщо ваш клієнт оплатив тариф Business за рік — ви отримаєте 5 508 ₴ за одного клієнта. Чим більше клієнтів — тим більший дохід. Ліміту по заробітку немає.' },
-      { q: 'Як і коли виплачується винагорода?', a: 'Виплати здійснюються щоквартально на ваш особистий або корпоративний банківський рахунок. Мінімальна сума для виплати — еквівалент $100. Якщо сума менша, вона накопичується і ніколи не згорає.' },
-      { q: 'Що таке період комісії 3 або 12 місяців?', a: 'Ви отримуєте 30% від платежів клієнта протягом перших 3 або 12 місяців після його підключення — залежно від умов вашої партнерської угоди. Після закінчення цього періоду комісія за цього клієнта більше не нараховується.' },
-      { q: 'Хто може стати партнером?', a: 'Інтегратори, консалтингові агентства, компанії з продажу обладнання для HoReCa, фрілансери — будь-хто, хто працює з ресторанами, кафе та магазинами. Потрібно пройти коротке навчання і отримати сертифікат партнера.' },
-      { q: 'Чи можна стати дилером і отримувати до 50%?', a: 'Так! Якщо ви виконуєте план із залучення клієнтів, ви можете отримати статус дилера з комісією до 50%. Деталі обговорюються з вашим персональним менеджером.' },
-      { q: 'Чи потрібно підписувати договір?', a: 'Ми працюємо за публічною офертою, тому укладати паперовий договір необов\'язково. Якщо вам потрібен окремий договір — напишіть нам, і ми його підготуємо.' }
+      { q: 'Скільки можна заробити з партнерською програмою Poster?', a: 'Отримуйте 30% від оплат кожного залученого клієнта. Наприклад, за клієнта на тарифі Business з річною оплатою ви заробите 5 508 ₴ + додаткову винагороду за підключення додаткових функцій. Кількість клієнтів необмежена — як і ваш дохід.' },
+      { q: 'Що означає період комісії 3 або 12 місяців?', a: 'Це період, протягом якого ви отримуєте 30% від оплат залученого клієнта — 3 або 12 місяців залежно від умов партнерства. Після завершення цього періоду виплати за клієнта припиняються.' },
+      { q: 'Хто може стати партнером?', a: 'Партнерська програма Poster підійде ресторанним експертам і консультантам, бухгалтерам, продавцям обладнання для закладів, розробникам сервісів, а також фрілансерам, які хочуть заробляти з Poster.' },
+      { q: 'Чи потрібно підписувати договір?', a: 'Poster працює за публічною офертою, тому окремий договір підписувати необов’язково. За потреби ми можемо підготувати договір індивідуально.' }
     ]
   },
   ru: {
     topbarKB: 'База знаний',
     topbarBlog: 'Блог',
     topbarHours: '· Круглосуточно',
-    navFeatures: 'Возможности',
-    navSolutions: 'Решения',
-    navHardware: 'Оборудование',
-    navPricing: 'Цены',
-    navPartner: 'Партнёрам',
     navLogin: 'Войти',
     navTry: 'Попробовать',
-
     heroBadge: 'Партнёрская программа · Украина',
-    heroTitle: 'Зарабатывайте <span>30%</span> с каждого клиента Poster',
-    heroSubtitle: 'Рекомендуйте Poster POS — POS-систему, которой пользуются 50 000+ заведений в 100 странах — и получайте вознаграждение за каждого привлечённого клиента в Украине.',
+    heroTitle: 'Зарабатывайте <span>до 8 000 грн</span> с каждого клиента Poster',
+    heroSubtitle: 'Рекомендуйте Poster заведениям и магазинам, помогайте подключать дополнительные функции и получайте вознаграждение за каждого нового клиента.',
     stat1: 'комиссия от подписки',
     stat2: 'заведений в 100 странах',
-    stat3: 'выплаты за клиента',
+    stat3: 'бесплатных дней',
     stat4: 'поддержка партнёров',
-
     calcTitle: 'Калькулятор партнёрского вознаграждения',
     calcSub: 'Узнайте, сколько вы заработаете на привлечении клиентов',
     labelPlan: 'Тарифный план клиента',
@@ -1476,7 +1343,6 @@ const i18n = {
     bkPeriod: 'Период комиссии',
     bkPayout: 'Выплата',
     bkPayoutVal: 'ежеквартально',
-
     advTitle: 'Преимущества партнёрства',
     advSubtitle: 'Почему стоит стать партнёром Poster POS в Украине',
     adv1Title: 'Высокие комиссионные',
@@ -1485,7 +1351,6 @@ const i18n = {
     adv2Text: 'Poster POS — проверенная система, которой пользуются 27 000 заведений по всему миру. Лёгкий и понятный продукт для рекомендации.',
     adv3Title: 'Персональный менеджер',
     adv3Text: 'Получите личного менеджера, обучающие материалы, маркетинговую поддержку и доступ к закрытым вебинарам команды Poster.',
-
     tableTitle: 'Тарифы и вознаграждение',
     tableSubtitle: 'Сколько вы заработаете за каждого клиента на каждом тарифе',
     thPlan: 'Тариф',
@@ -1493,210 +1358,51 @@ const i18n = {
     thMonthly: 'Цена/мес',
     thComm3: 'Комиссия 3 мес',
     thComm12: 'Комиссия 12 мес',
-
     chartTitle: 'Прогноз заработка',
     chartSubtitle: 'Если привлекать по 3 клиента ежемесячно на тариф Business (за год)',
-
     howTitle: 'Как это работает',
-    howSubtitle: 'Четыре простых шага к стабильному пассивному доходу',
+    howSubtitle: '3 шага к заработку с Poster',
     step1Title: 'Зарегистрируйтесь',
-    step1Text: 'Заполните форму на сайте и получите доступ к партнёрскому кабинету',
-    step2Title: 'Пройдите обучение',
-    step2Text: 'Изучите продукт и получите сертификат партнёра Poster',
-    step3Title: 'Рекомендуйте',
-    step3Text: 'Привлекайте новых клиентов — кафе, рестораны, магазины',
-    step4Title: 'Получайте деньги',
-    step4Text: '30% комиссии начисляется автоматически и выплачивается ежеквартально',
-
+    step1Text: 'Заполните форму на сайте, получите доступ к партнёрскому кабинету и пройдите короткое обучение по продукту.',
+    step2Title: 'Рекомендуйте',
+    step2Text: 'Привлекайте новых клиентов — кафе, рестораны, магазины. Помогайте подключать дополнительные функции Poster.',
+    step3Title: 'Получайте деньги',
+    step3Text: '30% комиссии начисляется автоматически и выплачивается ежеквартально на ваш счёт.',
     faqTitle: 'Частые вопросы',
     faqSubtitle: 'Всё, что нужно знать о партнёрской программе Poster',
-
     mgrLabel: 'Ваш персональный менеджер',
-    mgrName: 'Менеджер по Украине',
-    mgrRole: 'Партнёрская программа Poster POS · Украина. Свяжитесь со мной любым удобным способом — отвечу на все ваши вопросы.',
-
-    ctaTitle: 'Готовы зарабатывать с Poster?',
-    ctaText: 'Присоединяйтесь к партнёрской программе и начните получать пассивный доход уже сегодня',
+    mgrName: 'Александра Каблан',
+    mgrRole: 'Консультации и поддержка в партнёрской программе Poster. Напишите или позвоните удобным для вас способом.',
+    ctaTitle: 'Готовы стать партнёром Poster?',
+    ctaText: 'Начните зарабатывать вместе с Poster уже сегодня.',
     ctaBtn: 'Стать партнёром',
-
-    footerAbout: 'Облачная POS-система для автоматизации кафе, ресторанов и магазинов. Уже 50 000+ заведений в 9 странах.',
-    footerHours: 'Круглосуточно · Поддержка 24/7',
-    ftrPosterPos: 'Poster POS',
-    ftrTour: 'Тур по продукту',
-    ftrPricing: 'Цены',
-    ftrHardware: 'Оборудование',
-    ftrDownload: 'Скачать кассу',
-    ftrAddons: 'Дополнения',
-    ftrLearn: 'Обучение',
-    ftrKB: 'База знаний',
-    ftrWebinars: 'Вебинары',
-    ftrAcademy: 'Академия Poster',
-    ftrBlog: 'Блог о бизнесе',
-    ftrCompany: 'Компания',
-    ftrAbout: 'О нас',
-    ftrPartners: 'Партнёрам',
-    ftrCases: 'Кейсы клиентов',
-    ftrContacts: 'Контакты',
-    ftrCopy: '© 2026 Poster POS Inc. Партнёрський калькулятор',
-    ftrTerms: 'Соглашение',
-    ftrPrivacy: 'Конфиденциальность',
-    ftrCookies: 'Cookies',
-
+    ftrCopy: '© 2026 Poster POS Inc. Партнёрский калькулятор',
     pricePrefix: 'от ',
     priceSuffix: ' ₴/мес',
     periodSuffix: ' мес',
     chartMonth: 'мес ',
     faq: [
-      { q: 'Сколько я могу заработать как партнёр?', a: 'Вы получаете 30% от суммы подписки каждого привлечённого клиента. Например, если ваш клиент оплатил тариф Business за год — вы получите 75 816 ₴ за одного клиента. Чем больше клиентов — тем больше доход. Лимита по заработку нет.' },
-      { q: 'Как и когда выплачивается вознаграждение?', a: 'Выплаты осуществляются ежеквартально на ваш личный или корпоративный банковский счёт. Минимальная сумма для выплаты — эквивалент $100. Если сумма меньше, она накапливается и никогда не сгорает.' },
-      { q: 'Что такое период комиссии 3 или 12 месяцев?', a: 'Вы получаете 30% от платежей клиента в течение первых 3 или 12 месяцев после его подключения — в зависимости от условий вашего партнёрского соглашения. После окончания этого периода комиссия за этого клиента больше не начисляется.' },
-      { q: 'Кто может стать партнёром?', a: 'Интеграторы, консалтинговые агентства, компании по продаже оборудования для HoReCa, фрилансеры — любой, кто работает с ресторанами, кафе и магазинами. Нужно пройти короткое обучение и получить сертификат партнёра.' },
-      { q: 'Можно ли стать дилером и получать до 50%?', a: 'Да! Если вы выполняете план по привлечению клиентов, вы можете получить статус дилера с комиссией до 50%. Детали обсуждаются с вашим персональным менеджером.' },
-      { q: 'Нужно ли подписывать договор?', a: 'Мы работаем по публичной оферте, поэтому заключать бумажный договор необязательно. Если вам нужен отдельный договор — напишите нам, и мы его подготовим.' }
-    ]
-  },
-  kz: {
-    topbarKB: 'Білім базасы',
-    topbarBlog: 'Блог',
-    topbarHours: '· Тәулік бойы',
-    navFeatures: 'Мүмкіндіктер',
-    navSolutions: 'Шешімдер',
-    navHardware: 'Жабдық',
-    navPricing: 'Бағалар',
-    navPartner: 'Серіктестерге',
-    navLogin: 'Кіру',
-    navTry: 'Тегін көру',
-
-    heroBadge: 'Серіктестік бағдарлама · Қазақстан',
-    heroTitle: 'Әр Poster клиентінен <span>30%</span> табыс табыңыз',
-    heroSubtitle: '100 елдегі 27 000 мекеме қолданатын Poster POS жүйесін ұсыныңыз және Қазақстандағы әрбір тартылған клиент үшін сыйақы алыңыз.',
-    stat1: 'жазылымнан комиссия',
-    stat2: '100 елдегі мекемелер',
-    stat3: 'клиент үшін төлемдер',
-    stat4: 'серіктестерге қолдау',
-
-    calcTitle: 'Серіктестік сыйақы калькуляторы',
-    calcSub: 'Клиенттерді тартудан қанша табыс табатыныңызды біліңіз',
-    labelPlan: 'Клиенттің тарифтік жоспары',
-    planHit: 'Хит',
-    labelBilling: 'Клиенттің төлемі',
-    billingYear: 'Жылдық',
-    billingBadge: 'тиімді',
-    billingMonth: 'Айлық',
-    labelClients: 'Тартылған клиенттер саны',
-    unitClients: 'клиент',
-    labelPeriod: 'Комиссия есептелу кезеңі',
-    period3: '3 ай',
-    period12: '12 ай',
-    resultLabel: 'Сіздің сыйақыңыз',
-    currencyName: 'теңге',
-    perClientLabel: '1 клиент үшін',
-    perMonthLabel: 'Айына',
-    bkRate: 'Комиссия мөлшерлемесі',
-    bkPrice: 'Тариф бағасы/ай',
-    bkPeriod: 'Комиссия кезеңі',
-    bkPayout: 'Төлем',
-    bkPayoutVal: 'тоқсан сайын',
-
-    advTitle: 'Серіктестіктің артықшылықтары',
-    advSubtitle: 'Қазақстанда неліктен Poster POS серіктесі болу керек',
-    adv1Title: 'Жоғары комиссиялар',
-    adv1Text: 'Алғашқы 3 немесе 12 ай ішінде әрбір тартылған клиенттің жазылым сомасынан 30% алыңыз. Табыс шегі жоқ.',
-    adv2Title: '100 елде 27 000 мекеме',
-    adv2Text: 'Poster POS — әлем бойынша 27 000 мекеме қолданатын сенімді жүйе. Ұсынуға оңай және түсінікті өнім.',
-    adv3Title: 'Жеке менеджер',
-    adv3Text: 'Жеке менеджер, оқу материалдары, маркетингтік қолдау және Poster командасынан жабық вебинарларға қол жеткізу.',
-
-    tableTitle: 'Тарифтер мен сыйақы',
-    tableSubtitle: 'Әр тарифтегі клиент үшін қанша табыс табасыз',
-    thPlan: 'Тариф',
-    thAnnual: 'Баға/ай (жыл)',
-    thMonthly: 'Баға/ай',
-    thComm3: 'Комиссия 3 ай',
-    thComm12: 'Комиссия 12 ай',
-
-    chartTitle: 'Табыс болжамы',
-    chartSubtitle: 'Ай сайын Business тарифіне 3 клиент тартсаңыз (жылдық)',
-
-    howTitle: 'Қалай жұмыс істейді',
-    howSubtitle: 'Тұрақты пассивті табысқа жеткізетін төрт қарапайым қадам',
-    step1Title: 'Тіркеліңіз',
-    step1Text: 'Сайттағы нысанды толтырып, серіктестік кабинетке кіруге қол жеткізіңіз',
-    step2Title: 'Оқудан өтіңіз',
-    step2Text: 'Өнімді зерттеп, Poster серіктесі сертификатын алыңыз',
-    step3Title: 'Ұсыныңыз',
-    step3Text: 'Жаңа клиенттерді тартыңыз — кафелер, мейрамханалар, дүкендер',
-    step4Title: 'Ақша алыңыз',
-    step4Text: '30% комиссия автоматты түрде есептеліп, тоқсан сайын төленеді',
-
-    faqTitle: 'Жиі қойылатын сұрақтар',
-    faqSubtitle: 'Poster серіктестік бағдарламасы туралы білуге қажетті барлығы',
-
-    mgrLabel: 'Сіздің жеке менеджеріңіз',
-    mgrRole: 'Poster POS серіктестік бағдарламасы · Қазақстан. Қандай да бір ыңғайлы жолмен хабарласыңыз — барлық сұрақтарыңызға жауап беремін.',
-
-    ctaTitle: 'Poster-мен табыс табуға дайынсыз ба?',
-    ctaText: 'Серіктестік бағдарламаға қосылып, бүгіннен бастап пассивті табыс табыңыз',
-    ctaBtn: 'Серіктес болу',
-
-    footerAbout: 'Кафелер, мейрамханалар мен дүкендерді автоматтандыруға арналған бұлттық POS-жүйе. 9 елдегі 50 000+ мекеме қолданады.',
-    footerHours: 'Тәулік бойы · Қолдау 24/7',
-    ftrPosterPos: 'Poster POS',
-    ftrTour: 'Өнім туры',
-    ftrPricing: 'Бағалар',
-    ftrHardware: 'Жабдық',
-    ftrDownload: 'Касса жүктеу',
-    ftrAddons: 'Қосымшалар',
-    ftrLearn: 'Оқыту',
-    ftrKB: 'Білім базасы',
-    ftrWebinars: 'Вебинарлар',
-    ftrAcademy: 'Poster Академиясы',
-    ftrBlog: 'Бизнес блогы',
-    ftrCompany: 'Компания',
-    ftrAbout: 'Біз туралы',
-    ftrPartners: 'Серіктестерге',
-    ftrCases: 'Клиент кейстері',
-    ftrContacts: 'Байланыс',
-    ftrCopy: '© 2026 Poster POS Inc. Серіктестік калькулятор',
-    ftrTerms: 'Келісім',
-    ftrPrivacy: 'Құпиялық',
-    ftrCookies: 'Cookies',
-
-    pricePrefix: '',
-    priceSuffix: ' ₴/ай-дан',
-    periodSuffix: ' ай',
-    chartMonth: ' ай',
-    faq: [
-      { q: 'Серіктес ретінде қанша табыс таба аламын?', a: 'Сіз әрбір тартылған клиенттің жазылым сомасынан 30% аласыз. Мысалы, клиентіңіз Business тарифін жылдық төлесе — бір клиент үшін 75 816 ₴ аласыз. Клиент көп болған сайын — табыс та көп. Табыс шегі жоқ.' },
-      { q: 'Сыйақы қалай және қашан төленеді?', a: 'Төлемдер тоқсан сайын жеке немесе корпоративтік банктік шотыңызға аударылады. Төлемнің ең аз сомасы — $100 эквиваленті. Сома аз болса, ол жинақталады және ешқашан жойылмайды.' },
-      { q: '3 немесе 12 айлық комиссия кезеңі дегеніміз не?', a: 'Сіз клиент қосылғаннан кейінгі алғашқы 3 немесе 12 ай ішінде оның төлемдерінен 30% аласыз — серіктестік келісім шарттарына байланысты. Бұл кезең аяқталғаннан кейін осы клиент үшін комиссия есептелмейді.' },
-      { q: 'Кім серіктес бола алады?', a: 'Интеграторлар, консалтинг агенттіктері, HoReCa жабдықтарын сататын компаниялар, фрилансерлер — мейрамханалармен, кафелермен және дүкендермен жұмыс істейтін кез келген адам. Қысқа оқудан өтіп, серіктес сертификатын алу қажет.' },
-      { q: 'Дилер болып, 50%-ға дейін алуға бола ма?', a: 'Иә! Клиенттерді тарту жоспарын орындасаңыз, 50%-ға дейін комиссиямен дилер мәртебесін ала аласыз. Толық ақпарат жеке менеджеріңізбен талқыланады.' },
-      { q: 'Шарт жасасу керек пе?', a: 'Біз жария оферта бойынша жұмыс істейміз, сондықтан қағаз шарт жасасу міндетті емес. Жеке шарт қажет болса — бізге жазыңыз, біз оны дайындаймыз.' }
+      { q: 'Сколько можно заработать с партнёрской программой Poster?', a: 'Получайте 30% от оплат каждого привлечённого клиента. Например, за клиента на тарифе Business с годовой оплатой вы заработаете 5 508 ₴ + дополнительное вознаграждение за подключение дополнительных функций. Количество клиентов неограничено — как и ваш доход.' },
+      { q: 'Что означает период комиссии 3 или 12 месяцев?', a: 'Это период, в течение которого вы получаете 30% от оплат привлечённого клиента — 3 или 12 месяцев в зависимости от условий партнёрства. После окончания этого периода выплаты за клиента прекращаются.' },
+      { q: 'Кто может стать партнёром?', a: 'Партнёрская программа Poster подойдёт ресторанным экспертам и консультантам, бухгалтерам, продавцам оборудования для заведений, разработчикам сервисов, а также фрилансерам, которые хотят зарабатывать с Poster.' },
+      { q: 'Нужно ли подписывать договор?', a: 'Poster работает по публичной оферте, поэтому отдельный договор подписывать необязательно. При необходимости мы можем подготовить договор индивидуально.' }
     ]
   }
 };
-
 // ===== STATE =====
 let currentLang = 'ua';
 let currentPeriod = 12;
 let currentBilling = 'annual';
-
 const plans = {
   starter:  { annual: 540,  monthly: 600 },
   mini:     { annual: 1080, monthly: 1200 },
   business: { annual: 1530, monthly: 1700 },
   pro:      { annual: 2160, monthly: 2400 }
 };
-
-// ===== HELPERS =====
 function fmt(n) {
-  return Math.round(n).toLocaleString('ru-RU').replace(/ /g, ' ').replace(/,/g, ' ');
+  return Math.round(n).toLocaleString('ru-RU').replace(/ /g, ' ').replace(/,/g, ' ');
 }
-
 function t(key) { return i18n[currentLang][key] || key; }
-
-// ===== LANGUAGE =====
 function setLang(lang) {
   currentLang = lang;
   const labelMap = { ua: 'Укр', ru: 'Рус' };
@@ -1708,7 +1414,6 @@ function setLang(lang) {
   buildFaq();
   updateCalc();
 }
-
 function applyTranslations() {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     el.textContent = t(el.dataset.i18n);
@@ -1717,8 +1422,6 @@ function applyTranslations() {
     el.innerHTML = t(el.dataset.i18nHtml);
   });
 }
-
-// ===== FAQ =====
 function buildFaq() {
   const list = document.getElementById('faqList');
   const faqs = t('faq');
@@ -1734,7 +1437,6 @@ function buildFaq() {
     </div>
   `).join('');
 }
-
 function toggleFaq(el) {
   const item = el.parentElement;
   const answer = item.querySelector('.faq-answer');
@@ -1750,8 +1452,6 @@ function toggleFaq(el) {
     answer.style.maxHeight = answer.scrollHeight + 'px';
   }
 }
-
-// ===== CALCULATOR =====
 function setBilling(type) {
   currentBilling = type;
   document.querySelectorAll('[data-billing]').forEach(b => {
@@ -1759,7 +1459,6 @@ function setBilling(type) {
   });
   updateCalc();
 }
-
 function setPeriod(months) {
   currentPeriod = months;
   document.querySelectorAll('[data-period]').forEach(b => {
@@ -1767,67 +1466,49 @@ function setPeriod(months) {
   });
   updateCalc();
 }
-
 function updateCalc() {
   const plan = document.querySelector('input[name="plan"]:checked').value;
   const clients = parseInt(document.getElementById('clientSlider').value);
   const price = plans[plan][currentBilling];
-
   const perClientReward = price * currentPeriod * 0.30;
   const total = perClientReward * clients;
   const perMonthReward = total / currentPeriod;
-
   document.getElementById('clientCount').textContent = clients;
   document.getElementById('totalReward').textContent = fmt(total);
   document.getElementById('perClient').textContent = fmt(perClientReward) + ' ₴';
   document.getElementById('perMonth').textContent = fmt(perMonthReward) + ' ₴';
   document.getElementById('planPrice').textContent = fmt(price) + ' ₴';
   document.getElementById('periodDisplay').textContent = currentPeriod + t('periodSuffix');
-
-  // Update plan prices
   ['starter','mini','business','pro'].forEach(p => {
     const el = document.getElementById('price' + p.charAt(0).toUpperCase() + p.slice(1));
     if (el) el.textContent = t('pricePrefix') + fmt(plans[p][currentBilling]) + t('priceSuffix');
   });
-
-  // Slider fill
   const slider = document.getElementById('clientSlider');
   const pct = ((clients - 1) / 49) * 100;
   slider.style.background = `linear-gradient(to right, var(--poster-green) 0%, var(--poster-green) ${pct}%, var(--border) ${pct}%, var(--border) 100%)`;
-
   drawChart();
 }
-
-// ===== CHART =====
 function drawChart() {
   const canvas = document.getElementById('projectionChart');
   const ctx = canvas.getContext('2d');
   const dpr = window.devicePixelRatio || 1;
-
   canvas.width = canvas.offsetWidth * dpr;
   canvas.height = canvas.offsetHeight * dpr;
   ctx.scale(dpr, dpr);
-
   const w = canvas.offsetWidth;
   const h = canvas.offsetHeight;
-
   const plan = document.querySelector('input[name="plan"]:checked').value;
   const price = plans[plan][currentBilling];
   const reward = price * currentPeriod * 0.30;
-
   const months = 12;
   const data = [];
   let cum = 0;
   for (let i = 1; i <= months; i++) { cum += 3 * reward; data.push(cum); }
-
   const max = data[months - 1];
   const pT = 36, pB = 36, pL = 80, pR = 24;
   const cW = w - pL - pR;
   const cH = h - pT - pB;
-
   ctx.clearRect(0, 0, w, h);
-
-  // Grid
   ctx.strokeStyle = '#f0f0f0';
   ctx.lineWidth = 1;
   for (let i = 0; i <= 4; i++) {
@@ -1838,19 +1519,15 @@ function drawChart() {
     ctx.textAlign = 'right';
     ctx.fillText(fmt(max - (max / 4) * i) + ' ₴', pL - 10, y + 4);
   }
-
-  // X labels
   const monthLabel = t('chartMonth');
   ctx.textAlign = 'center';
   for (let i = 0; i < months; i++) {
     const x = pL + (cW / (months - 1)) * i;
     ctx.fillStyle = '#9ca3af';
     ctx.font = '11px Inter, sans-serif';
-    const label = currentLang === 'ua' ? monthLabel + (i + 1) : monthLabel + (i + 1);
+    const label = monthLabel + (i + 1);
     ctx.fillText(label, x, h - 10);
   }
-
-  // Area
   ctx.beginPath();
   ctx.moveTo(pL, pT + cH);
   for (let i = 0; i < months; i++) {
@@ -1870,8 +1547,6 @@ function drawChart() {
   gr.addColorStop(1, 'rgba(0,185,86,0.01)');
   ctx.fillStyle = gr;
   ctx.fill();
-
-  // Line
   ctx.beginPath();
   for (let i = 0; i < months; i++) {
     const x = pL + (cW / (months - 1)) * i;
@@ -1886,8 +1561,6 @@ function drawChart() {
   ctx.strokeStyle = '#00b956';
   ctx.lineWidth = 3;
   ctx.stroke();
-
-  // Dots
   for (let i = 0; i < months; i++) {
     const x = pL + (cW / (months - 1)) * i;
     const y = pT + cH - (data[i] / max) * cH;
@@ -1895,8 +1568,6 @@ function drawChart() {
     ctx.fillStyle = '#00b956'; ctx.fill();
     ctx.strokeStyle = '#fff'; ctx.lineWidth = 2.5; ctx.stroke();
   }
-
-  // End label
   const lx = pL + cW;
   const ly = pT + cH - (data[months - 1] / max) * cH;
   ctx.fillStyle = '#1a1a1a';
@@ -1904,8 +1575,6 @@ function drawChart() {
   ctx.textAlign = 'right';
   ctx.fillText(fmt(data[months - 1]) + ' ₴', lx, ly - 14);
 }
-
-// ===== INIT =====
 applyTranslations();
 buildFaq();
 updateCalc();
